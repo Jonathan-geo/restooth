@@ -1,4 +1,5 @@
 import environ
+import django_heroku
 from restooth.settings.base import *
 
 env = environ.Env()
@@ -12,3 +13,5 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 DATABASES = {
     'default': env.db(),
 }
+
+django_heroku.settings(locals())
