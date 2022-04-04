@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'authentication',
+    'clientes',
 ]
 
 MIDDLEWARE = [
@@ -94,7 +95,8 @@ AUTH_PASSWORD_VALIDATORS = [
 REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'authentication.jwt.JWTAuthentication',
-    ]
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
 }
 
 # Internationalization
