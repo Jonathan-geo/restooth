@@ -5,5 +5,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/auth/', include('authentication.urls')),
     path('api/notetooth/', include('clientes.urls')),
-    #path('api/noteberry/', include('clientes.urls')),
+    path('api/noteberry/', include('noteberry.urls')),
 ]

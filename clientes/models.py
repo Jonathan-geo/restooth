@@ -57,8 +57,3 @@ class Anamnese(TrackingModel):
 
     def __str__(self):
         return self.id_cliente
-
-
-
-
-
